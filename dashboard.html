@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter Dashboard - Online Voting System</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <script defer src="assets/js/dashboard.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1 class="dashboard-title">
+            <span class="title-icon">🗳️</span> Voter Dashboard
+        </h1>
+        <div class="voter-info" id="voterInfo">
+            <p>Loading voter details...</p>
+        </div>
+
+        <div class="dashboard-actions">
+            <h2>Your Actions</h2>
+            <div class="action-buttons">
+                <a href="vote.html" class="btn vote-btn" data-tooltip="Cast your vote now!">
+                    <span class="btn-icon">✍️</span> Cast Your Vote
+                </a>
+                <a href="results.html" class="btn results-btn" data-tooltip="See the current election results">
+                    <span class="btn-icon">📊</span> View Results
+                </a>
+                <button id="logoutBtn" class="btn logout-btn" data-tooltip="End your session">
+                    <span class="btn-icon">🚪</span> Logout
+                </button>
+            </div>
+        </div>
+
+        <div class="voting-status">
+            <h2>Election Overview</h2>
+            <p id="voteStatus">You haven’t voted yet.</p>
+            <div class="progress-teaser">
+                <p>Election Progress:</p>
+                <div class="progress-bar">
+                    <div id="progressFill" class="progress-fill"></div>
+                </div>
+                <p id="progressText">Loading...</p>
+            </div>
+            <div class="quick-stats">
+                <div class="stat-card" data-tooltip="Total candidates in the election">
+                    <span class="stat-icon">👥</span>
+                    <p>Candidates: <span id="totalCandidates">0</span></p>
+                </div>
+                <div class="stat-card" data-tooltip="Total voters who have participated">
+                    <span class="stat-icon">🗳️</span>
+                    <p>Voters: <span id="totalVoters">0</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

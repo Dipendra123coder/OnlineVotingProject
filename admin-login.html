@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - Online Voting System</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <script defer src="assets/js/admin.js"></script>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Admin Login</h2>
+        <p>Enter admin credentials to manage the system.</p>
+        <form id="adminLoginForm">
+            <input type="text" id="adminUsername" placeholder="Admin Username" required>
+            <input type="password" id="adminPassword" placeholder="Admin Password" required>
+            <button type="submit">Login as Admin</button>
+        </form>
+        <p id="adminErrorMessage" class="error-message"></p>
+        <p><a href="login.html">Voter Login</a></p>
+    </div>
+</body>
+</html>
