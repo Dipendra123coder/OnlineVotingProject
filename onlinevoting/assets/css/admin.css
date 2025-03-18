@@ -1,0 +1,23 @@
+.voter-logs {
+    margin: 20px 0;
+}
+
+.voter-logs table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.voter-logs th, .voter-logs td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    word-break: break-word;
+}
+
+.voter-logs th {
+    background: #34495e;
+    color: white;
+}
+
+/* Rest of the existing CSS remains unchanged */

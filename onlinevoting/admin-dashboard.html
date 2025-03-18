@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Online Voting System</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/admin.css">
+    <script defer src="assets/js/admin.js"></script>
+</head>
+<body>
+    <div class="admin-dashboard-container">
+        <h1>Admin Dashboard</h1>
+        <div class="admin-info" id="adminInfo">Loading admin details...</div>
+
+        <!-- Post and Candidate Management -->
+        <div class="candidate-management">
+            <h2>Manage Posts and Candidates</h2>
+            <form id="addPostForm">
+                <input type="text" id="newPostName" placeholder="Post Name (e.g., President)" required>
+                <button type="submit">Add Post</button>
+            </form>
+            <form id="addCandidateForm">
+                <select id="postSelect" required></select>
+                <input type="text" id="newCandidateName" placeholder="Candidate Name" required>
+                <button type="submit">Add Candidate</button>
+            </form>
+            <div id="postTables"></div>
+        </div>
+
+        <!-- Voter Logs -->
+        <div class="voter-logs">
+            <h2>Voter Logs</h2>
+            <table id="voterVoteTable">
+                <thead>
+                    <tr><th>Voter ID</th><th>Votes</th><th>Timestamp</th></tr>
+                </thead>
+                <tbody id="voterVoteList"></tbody>
+            </table>
+        </div>
+
+        <!-- Election Controls -->
+        <div class="election-controls">
+            <h2>Election Controls</h2>
+            <button id="startElection">Start Voting</button>
+            <button id="stopElection">Stop Voting</button>
+            <button id="resetVotes">Reset All Votes</button>
+            <p id="electionStatus">Election Status: Stopped</p>
+        </div>
+
+        <button id="adminLogoutBtn" class="btn logout-btn">Logout</button>
+    </div>
+</body>
+</html>

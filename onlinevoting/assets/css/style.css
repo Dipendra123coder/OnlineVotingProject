@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    margin: 0;
+}
+.login-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+h2 {
+    color: #333;
+}
+p {
+    color: #555;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+input:focus {
+    border-color: #667eea;
+    outline: none;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+}
+button {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 5px;
+}
+button:hover {
+    background: #5648c5;
+}
+.error-message {
+    color: red;
+    font-size: 0.9em;
+}
+/* Dashboard Styles */
+.dashboard-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.dashboard-links {
+    margin: 20px 0;
+}
+
+.dashboard-link {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #667eea;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.dashboard-link:hover {
+    background: #5648c5;
+}
+
+#logoutButton {
+    background: #ff4d4d;
+    border: none;
+    cursor: pointer;
+}
+
+#logoutButton:hover {
+    background: #cc0000;
+}
+
+.dashboard-features {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.dashboard-features h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.dashboard-features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dashboard-features ul li {
+    padding: 8px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.post-section {
+    margin: 20px 0;
+}
+
+.post-section h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
